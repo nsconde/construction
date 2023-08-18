@@ -5,6 +5,7 @@
     import Header from './header';
     import 'bootstrap/dist/css/bootstrap.min.css';
     import Michale from './michael.jpeg'
+    import PortfolioCarousel from  './portfolio'
     
     const Home = ()=>{
         const url = 'https://www.facebook.com/Laurisnotaryservices/';
@@ -17,8 +18,13 @@
             <div id='head'>
                 <h1 id="heading"><Header/></h1>
             <div id="column">
+               
                 <img id="kitchen" src={Michale} alt="kitchen"/>
-        
+ 
+        </div>
+    
+        <div>
+            <PortfolioCarousel/>
         </div>
         </div>
 
