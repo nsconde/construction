@@ -1,12 +1,14 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './portfolio.css'; // You can create your own CSS file for styling
+import './portfolio.css';
+
+
 
 const portfolioItems = [
   {
     id: 1,
-    imageSrc: 'image1.jpg', // Replace with actual image paths
+    imageSrc: './Kitchen.jpeg',
     caption: 'Project 1',
   },
   {
@@ -27,8 +29,8 @@ const PortfolioCarousel = () => {
     <div className="carousel-container">
       <Carousel showArrows={true} infiniteLoop={true}>
         {portfolioItems.map((item) => (
-          <div key={item.id}>
-            <img src={item.imageSrc} alt={item.caption} />
+          <div className = "hold" key={item.id}>
+            <img className="rennoImg" src={item.imageSrc} alt={item.caption}/>
             <p className="legend">{item.caption}</p>
           </div>
         ))}
