@@ -11,16 +11,16 @@ const portfolioItems = [
     imageSrc: './Kitchen.jpeg',
     caption: 'Project 1',
   },
-  {
-    id: 2,
-    imageSrc: 'image2.jpg',
-    caption: 'Project 2',
-  },
-  {
-    id: 3,
-    imageSrc: 'image3.jpg',
-    caption: 'Project 3',
-  },
+  // {
+  //   id: 2,
+  //   imageSrc: 'image2.jpg',
+  //   caption: 'Project 2',
+  // },
+  // {
+  //   id: 3,
+  //   imageSrc: 'image3.jpg',
+  //   caption: 'Project 3',
+  // },
   // Add more portfolio items as needed
 ];
 
@@ -30,7 +30,11 @@ const PortfolioCarousel = () => {
       <Carousel showArrows={true} infiniteLoop={true}>
         {portfolioItems.map((item) => (
           <div className = "hold" key={item.id}>
-            <img className="rennoImg" src={item.imageSrc} alt={item.caption}/>
+             <img
+              className="rennoImg"
+              src={require(`${item.imageSrc}`)}
+              alt={item.caption}
+            />
             <p className="legend">{item.caption}</p>
           </div>
         ))}
