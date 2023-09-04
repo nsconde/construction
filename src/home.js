@@ -22,6 +22,11 @@
                 <img id="kitchen" src={Michale} alt="kitchen"/>
  
         </div>
+    <div>
+        <h1 id='companyDescription'> Welcome to A&M - Your Trusted Partner in Building Dreams!</h1>
+
+<p>At A&M, we are more than just builders; we are craftsmen, dreamweavers, and solution providers. With decades of experience in the construction industry, we have been transforming commercial spaces and privately owned homes into functional, beautiful, and sustainable structures. </p>
+    </div>
     
         <div>
             <PortfolioCarousel/>
