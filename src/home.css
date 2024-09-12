@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
 #column{
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@ position:center;
     background-clip: border-box;
     height: 600px;
     width: 100%;
-    margin-top:40px;
+    margin-top:50px;
     
 }
 
@@ -49,4 +53,10 @@ position:center;
     margin-top:50px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
+}
+#companyDescription{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+  text-align: center;
+    font-size: 25 px; 
 }

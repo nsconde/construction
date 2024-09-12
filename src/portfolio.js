@@ -4,21 +4,20 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './portfolio.css';
 
 
-
 const portfolioItems = [
   {
     id: 1,
     imageSrc: './Kitchen.jpeg',
-    caption: 'Project 1',
+    caption: 'Kitchen Rennovation',
   },
   {
     id: 2,
-    imageSrc: 'image2.jpg',
+    imageSrc: './Kitchen.jpeg',
     caption: 'Project 2',
   },
   {
     id: 3,
-    imageSrc: 'image3.jpg',
+    imageSrc: './Kitchen.jpeg',
     caption: 'Project 3',
   },
   // Add more portfolio items as needed
@@ -29,9 +28,14 @@ const PortfolioCarousel = () => {
     <div className="carousel-container">
       <Carousel showArrows={true} infiniteLoop={true}>
         {portfolioItems.map((item) => (
-          <div className = "hold" key={item.id}>
-            <img className="rennoImg" src={item.imageSrc} alt={item.caption}/>
-            <p className="legend">{item.caption}</p>
+          <div key={item.id}>
+            <img  src={item.imageSrc} alt={item.caption}/>
+            <img
+            className="rennoImg"
+            src={require(`${item.imageSrc}`)}
+            alt={item.caption}
+            />
+           <p className="legend">{item.caption}</p>
           </div>
         ))}
       </Carousel>

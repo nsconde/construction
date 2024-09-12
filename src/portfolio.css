@@ -1,19 +1,8 @@
 .carousel-container{
+    margin-top: 400px;
     margin-left: auto;
     margin-right: auto;
     height: 500px;
     width: 75%;
-    background-color: rgb(193, 193, 196);
-}
-.hold{
-    
-}
-
-.rennoImg{
-    height:100px;
-    width: 100px;
-    color:teal;
-}
-.legend{
-   
+    background-color: rgb(173, 173, 173);
 }
